@@ -2,8 +2,6 @@
 
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 const particleArr = [];
 let hue = 0;
 
@@ -12,10 +10,23 @@ const mouse = {
 	y: undefined,
 };
 
+window.addEventListener("load", () => {
+	setCanvasSize()
+})
+
 canvas.addEventListener("mousemove", (e) => {
 	mouse.x = e.x;
 	mouse.y = e.y;
 });
+
+window.addEventListener("resize", () => {
+	setCanvasSize()
+});
+
+function setCanvasSize () {
+	canvas.width = window.innerWidth;
+	canvas.height =  window.innerHeight;
+}
 
 class Particle {
 	constructor() {
@@ -59,6 +70,7 @@ const handleAni = () => {
 				ctx.beginPath();
 				ctx.moveTo(particleArr[i].x, particleArr[i].y);
 				ctx.lineTo(particleArr[j].x, particleArr[j].y);
+				// comment  the line below to disable line
 				ctx.stroke();
 			}
 		}
@@ -70,9 +82,8 @@ const handleAni = () => {
 };
 
 const animate = () => {
+	// comment line below to disable clearing canvas
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	// ctx.fillStyle = `rgba(0, 0, 0, 0.01)`; //trail
-	// ctx.fillRect(0, 0, canvas.width, canvas.height); //trail
 	handleAni();
 	hue++;
 	requestAnimationFrame(animate);
