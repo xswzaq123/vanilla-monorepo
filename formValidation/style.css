@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --invalid: rgb(197, 114, 114);
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+    background: #ccd78a;
+    padding: 4rem;
+    border-radius: 1.2rem;
+    width: 30rem;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+}
+
+form>div {
+    display: flex;
+    flex-flow: column;
+    gap: 0.4rem;
+}
+
+
+span {
+    color: var(--invalid);
+}

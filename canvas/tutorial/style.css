@@ -1,0 +1,10 @@
+#canvas {
+    width: 600px;
+    height: 600px;
+}
+
+#control {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+}

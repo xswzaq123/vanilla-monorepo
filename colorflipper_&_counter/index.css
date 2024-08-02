@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+#bg {
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn {
+    padding: 0.6rem 2rem;
+    margin-top: 1rem;
+    background: none;
+    border: 0.2rem dashed #000;
+}
+
+.btn:hover {
+    scale: 1.2;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.two {
+    transform: translateY(-22.5%);
+}

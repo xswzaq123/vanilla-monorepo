@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+section {
+    min-height: 100vh;
+    background-image: url("assets/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+.banner {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2rem;
+    padding-top: 5rem;
+}
+
+.banner::before {
+    position: absolute;
+    content: "Character event warp";
+    top: 2rem;
+    left: 1rem;
+    font-size: 1.6rem;
+    background: teal;
+    padding: 0.6rem 2rem;
+    border-top-right-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+    z-index: 1;
+}
+
+.banner::after {
+    position: absolute;
+    content: "";
+    background: linear-gradient(rgb(234, 234, 220) 50%, rgb(234, 234, 220, 0.095));
+    width: 31.3%;
+    height: 88%;
+    top: 1rem;
+    left: 2rem;
+    border-top-right-radius: 6rem;
+}
+
+button {
+    font-size: 1.3rem;
+    padding: 0.8rem 5rem;
+    border-radius: 2rem;
+    background: linear-gradient(to left, rgb(255, 248, 240), rgb(221, 239, 255));
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px #4d4d4d;
+    z-index: 5;
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(to left, rgb(211, 205, 197), rgba(167, 181, 193));
+}
+
+h1 {
+    font-size: 4rem;
+    color: #181818;
+    margin-bottom: 2rem;
+    /* text-shadow: 3px 3px 5px #000; */
+    z-index: 5;
+}
+
+h2 {
+    font-size: 2rem;
+    z-index: 5;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    z-index: 5;
+}
+
+.pass {
+    width: 2rem;
+}
+
+.btnContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.details {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    margin-block: 5rem;
+    justify-content: space-around;
+    gap: 2rem;
+
+}
+
+.frame {
+    background: #0000008e;
+    width: 60%;
+    border: 3px solid goldenrod;
+    padding: 1rem 3rem;
+    line-height: 1.9rem;
+}
+
+.frame>p {
+    font-size: 1.2rem;
+}
+
+.fourStar {
+    /* background: #000; */
+    width: 30%;
+    display: flex;
+    /* gap: 1rem; */
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.fourStar>img {
+    /* width: 10rem; */
+    width: 28%;
+    background: #fff;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+
+.dull {
+    color: #2c2c2c;
+}
+
+h2>span {
+    color: rgb(220, 175, 61);
+}
+
+.counter {
+    font-size: 1.5rem;
+    color: #181818;
+}
+
+.indent {
+    text-indent: 1.3rem;
+}
+
+.onePull {
+    position: fixed;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background: #000000d1;
+    padding: 4rem;
+    width: 90%;
+    height: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+.warpContainer {
+    margin-top: 6rem;
+}
+
+.warpBtn{
+    position: relative;
+}
+
+.warpBtn::before {
+    content: "";
+    width: 92%;
+    z-index: 20;
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: inherit;
+    outline: 1px rgba(128, 128, 128, 0.158) solid;
+
+}
+
+.image {
+    width: 30%;
+    height: 90%;
+}
+
+.pull_image {
+    object-fit: contain;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    /* border: 0.2rem solid goldenrod; */
+}
+
+.gridImg {
+    width: 100%;
+    height: 200px;
+}
+
+.onePull>p {
+    text-align: center;
+    margin: 1rem;
+}
+
+
+.tenpull {
+    position: fixed;
+    width: 95%;
+    display: grid;
+    justify-content: center;
+    padding: 2rem;
+    gap: 2rem;
+    background: #000000d1;
+    grid-template-columns: repeat(5, 200px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.tenpull>p {
+    grid-column: span 2/5;
+}
+
+
+
+.tenpull>div>p {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(209, 153, 9);
+}
+
+.show {
+    display: block;
+}
+
+.showGrid {
+    display: grid;
+}
+
+.hide {
+    display: none;
+}
+
+#itemName {
+    font-size: 24px;
+    color: rgb(209, 153, 9);
+}
+
+.close:hover {
+    cursor: pointer;
+}
+

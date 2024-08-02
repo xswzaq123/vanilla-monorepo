@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 6rem;
+}
+
+.midiContainer {
+    display: flex;
+}
+
+.key {
+    width: 6rem;
+    height: 12rem;
+    background: #fff;
+    border: 0.01rem solid #000;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.key:hover {
+    cursor: pointer;
+}

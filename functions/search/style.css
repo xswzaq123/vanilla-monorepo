@@ -1,0 +1,28 @@
+body {
+	background: #2f2f2f;
+}
+
+#iSearch {
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 30rem;
+	border-radius: 1.5rem;
+	border: none;
+	outline: none;
+	padding: 0.6rem;
+}
+
+#suggestion {
+	background: #f9f9f9;
+	position: absolute;
+	top: 8.6%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 28rem;
+}
+
+.hidden {
+	display: none;
+}

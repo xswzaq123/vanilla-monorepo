@@ -1,0 +1,49 @@
+:root {
+	--img-width: 15rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.container {
+	display: flex;
+	border: 0.5rem solid #000;
+	overflow: hidden;
+}
+
+#carousel {
+	width: var(--img-width);
+	background: #000;
+	height: inherit;
+	display: flex;
+}
+
+img {
+	width: inherit;
+	/* height: inherit; */
+	object-fit: cover;
+}
+
+button {
+	max-width: 2rem;
+	min-width: 2rem;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	background-color: rgb(97, 235, 175);
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

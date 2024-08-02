@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fetch</title>
+		<script defer src="test.js"></script>
+	</head>
+	<style>
+		#data {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 50%;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+	</style>
+	<body>
+		<button onclick="getUser()" style="width: 100px">Get Quote</button>
+		<p id="data" style="font-size: 23px"></p>
+	</body>
+</html>

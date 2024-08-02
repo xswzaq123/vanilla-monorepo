@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-radius: 0.6rem;
+}
+
+:root {
+    --main: rgb(104, 190, 194);
+    --mainWashed: rgb(163, 222, 223);
+    --mainDark: rgb(48, 192, 194);
+    --accent: rgb(255, 191, 71);
+    --danger: rgb(249, 109, 109);
+    --dangerHover: rgb(222, 93, 93);
+}
+
+.w60 {
+    width: 60%;
+}
+
+.curP {
+    cursor: pointer;
+}
+
+.ml2 {
+    margin-left: 2rem;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.mainContainer {
+    background: rgb(220, 220, 220);
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem 2rem 0rem 2rem;
+    overflow-y: scroll;
+}
+
+#taskList {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#task {
+    display: flex;
+    justify-content: space-between;
+    background: var(--main);
+    align-items: center;
+    padding: 1rem;
+}
+
+#form, input, button {
+    background: none;
+    outline: none;
+    border: none;
+    appearance: none;
+    padding: 0.6rem;
+    border-radius: 1rem;
+}
+
+
+
+input {
+    background: var(--mainWashed);
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+.formActions {
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+}
+
+.formActions>button {
+    background: var(--main);
+    box-shadow: 0.1rem 0.1rem 0.3rem #cecece;
+}
+
+.formActions>button:nth-child(1) {
+    background: var(--main);
+}
+.formActions>button:nth-child(2) {
+    background: var(--danger);
+}
+
+.formItem {
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+#modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    box-shadow: 0.1rem 0.1rem 0.3rem #cecece;
+}
+
+#btnAdd {
+    background: var(--main);
+    max-width: fit-content;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#delete {
+    background: var(--danger);
+}
+
+
+#delete:hover {
+    background: var(--dangerHover);
+} 

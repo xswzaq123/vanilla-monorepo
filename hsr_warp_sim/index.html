@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HSR Warp Sim</title>
+</head>
+
+<body id="body">
+    <section>
+        <div class="banner">
+            <h1>Jing Yuan Warp</h1>
+            <h2 class="dull">Every <span>10</span> warps gurantees a <span>4</span>-star <br>or above entity</h2>
+            <div class="details">
+                <div class="fourStar">
+                    <img src="assets/1.png" alt="sushang">
+                    <img src="assets/2.png" alt="tingyun">
+                    <img src="assets/3.png" alt="march">
+                </div>
+                <div class="frame">
+                    <p>Jing Yuan: 4% increased drop rate</p>
+                    <p>Sushang: 20% increased drop rate</p>
+                    <p>Tingyun: 20% increased drop rate</p>
+                    <p>March 7th: 20% increased drop rate</p>
+                </div>
+            </div>
+            <div class="warpContainer">
+                <p class="counter indent"><strong>Warps: <span id="num">0</span></strong></p>
+                <div class="btnContainer">
+                    <button id="one" class="warpBtn"><img src="assets/starrailpass.webp" alt="pass" class="pass"> &nbsp;x1 | Warp</button>
+                    <button id="ten" class="warpBtn"><img src="assets/starrailpass.webp" alt="pass" class="pass"> &nbsp;x10 | Warp</button>
+                </div>
+            </div>
+
+        </div>
+
+            <!-- Single warp -->
+        <div id="onePull" class="onePull hide">
+            <img id="image" class="image pull_image" src="" alt="img">
+            <p id="itemName"></p>
+            <p id="closeOne" class="close">Press to continue</p>
+        </div>
+
+        <!-- Ten warp -->
+        <div id="tenPull" class="tenpull hide">
+            <div>
+                <img id="img1" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName1"></p>
+            </div>
+            <div>
+                <img id="img2" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName2"></p>
+            </div>
+            <div>
+                <img id="img3" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName3"></p>
+            </div>
+            <div>
+                <img id="img4" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName4"></p>
+            </div>
+            <div>
+                <img id="img5" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName5"></p>
+            </div>
+            <div>
+                <img id="img6" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName6"></p>
+            </div>
+            <div>
+                <img id="img7" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName7"></p>
+            </div>
+            <div>
+                <img id="img8" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName8"></p>
+            </div>
+            <div>
+                <img id="img9" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName9"></p>
+            </div>
+            <div>
+                <img id="img0" class="gridImg pull_image" src="" alt="img">
+                <p id="itemName0"></p>
+            </div>
+            <p id="closeTen" class="close">Press to continue</p>
+        </div>
+    </section>
+    <script src="warp.js" type="module"></script>
+</body>
+
+</html>

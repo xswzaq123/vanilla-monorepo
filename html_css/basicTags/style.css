@@ -1,0 +1,70 @@
+* {
+	/* Universal selector*/
+	/* Apply styling */
+	/* Note: Applies to all tags */
+	box-sizing: border-box;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	list-style: none;
+	text-decoration: none;
+	padding: 0;
+}
+body {
+	margin: 0;
+	display: flex;
+}
+.sidebar {
+	position: fixed;
+	background: #37373e;
+	width: 14%;
+	height: 100%;
+	color: #fff;
+}
+.sidebar > h2 {
+	margin-left: 1rem;
+}
+.sidebar a {
+	color: #fff;
+}
+code {
+	background: #4f4f4f;
+}
+a {
+	color: aqua;
+}
+p {
+	line-height: 2rem;
+}
+section {
+	margin-bottom: 2rem;
+}
+.mainBody {
+	position: absolute;
+	left: 14%;
+	width: 86%;
+	padding-inline: 15rem;
+	margin: auto 0;
+	background-color: #1d1d22;
+	color: #d6d6d6;
+}
+.mainBody > h1 {
+	margin-bottom: 3rem;
+}
+li {
+	background-color: #44444a;
+	padding: 1rem 1rem 1rem 2rem;
+}
+.example {
+	background: #2b2b31;
+	padding: 1rem;
+	width: 100%;
+}
+img {
+	width: 200px;
+}
+li:hover {
+	background: #55555d;
+}
+.disbtn {
+	background-color: #fff;
+	color: #000;
+}

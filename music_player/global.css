@@ -1,0 +1,26 @@
+:root {
+	--text-color: #e8e8e8;
+	--bg-color: #0e1214;
+	--nav-color: #1f262a;
+	--divider-color: rgba(255, 255, 255, 0.3);
+	--hover-color: #1d2529;
+	--accessory-color: #9ab0aa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+body {
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+	text-align: center;
+}

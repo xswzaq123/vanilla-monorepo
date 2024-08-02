@@ -1,0 +1,218 @@
+<html>
+	<head>
+		<title>Basic tags</title>
+	</head>
+	<link rel="stylesheet" href="style.css" />
+	<body>
+		<div class="sidebar">
+			<h2>Contents</h2>
+			<ul>
+				<a href="#section-h"><li>Heading Tag</li></a>
+				<a href="#section-p"><li>Paragraph Tag</li></a>
+				<a href="#section-br"><li>Break Tag</li></a>
+				<a href="#section-hr"><li>Horizontal Line Tag</li></a>
+				<a href="#section-a"><li>Anchor Tag</li></a>
+				<a href="#section-img"><li>Image Tag</li></a>
+				<a href="#section-btn"><li>Button Tag</li></a>
+				<a href="#section-form"><li>Form Tag</li></a>
+			</ul>
+		</div>
+		<div class="mainBody">
+			<h1>HTML basic tags</h1>
+			<!-- Heading tag -->
+			<section id="section-h">
+				<h2>Heading Tag</h2>
+				<p>
+					The <code>&lth&gt</code> tags starts from h1 to h6
+					(<code>&lth1&gt</code>, <code>&lth2&gt</code>, <code>&lth3&gt</code>,
+					<code>&lth4&gt</code>, <code>&lth5&gt</code>, <code>&lth6&gt</code>).
+					Used for displaying headers in a webpage.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					<p>&lth1&gtHello World!&lt/h1&gt</p>
+					<p>&lth2&gtHello World!&lt/h2&gt</p>
+					<p>&lth3&gtHello World!&lt/h3&gt</p>
+					<p>&lth4&gtHello World!&lt/h4&gt</p>
+					<p>&lth5&gtHello World!&lt/h5&gt</p>
+					<p>&lth6&gtHello World!&lt/h6&gt</p>
+
+					<h3>Output:</h3>
+					<h1>H1 - Hello World!</h1>
+					<h2>H2 - Hello World!</h2>
+					<h3>H3 - Hello World!</h3>
+					<h4>H4 - Hello World!</h4>
+					<h5>H5 - Hello World!</h5>
+					<h6>H6 - Hello World!</h6>
+				</div>
+			</section>
+			<!-- Paragraph tag -->
+			<section id="section-p">
+				<h2>Paragraph Tag</h2>
+				<p>
+					The <code>&ltp&gt</code> tag is used to display a paragraph of text.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					<p>&ltp&gtHello World!&lt/p&gt</p>
+					<h3>Output:</h3>
+					<p>Hello World!</p>
+				</div>
+			</section>
+			<!-- Break tag -->
+			<section id="section-br">
+				<h2>Break Tag</h2>
+				<p>
+					The <code>&ltbr /&gt</code> tag is used to add a line break. It is an
+					empty tag.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					<p>
+						&ltp&gtLorem ipsum dolor sit amet &ltbr /&gt consectetur adipisicing
+						elit. Blanditiis, minus.&lt/p&gt
+					</p>
+					<h3>Output:</h3>
+					<p>Lorem ipsum dolor sit amet</p>
+					<p>consectetur adipisicing elit. Blanditiis, minus.</p>
+				</div>
+			</section>
+			<!-- Horizontal line tag -->
+			<section id="section-hr">
+				<h2>Horzontal Line Tag</h2>
+				<p>
+					The <code>&lthr /&gt</code> tag is used to add a horizontal line. It
+					is an empty tag.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					<p>
+						&ltp&gtLorem ipsum dolor sit amet consectetur adipisicing elit.
+						Blanditiis, minus.&lt/p&gt
+						<br />
+						&lthr /&gt
+						<br />
+						&ltp&gtLorem ipsum dolor sit amet consectetur adipisicing elit.
+						Blanditiis, minus.&lt/p&gt
+					</p>
+					<h3>Output:</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						minus.
+					</p>
+					<hr />
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+						minus.
+					</p>
+				</div>
+			</section>
+			<!-- Anchor tag -->
+			<section id="section-a">
+				<h2>Anchor Tag</h2>
+				<p>
+					The <code>&lta&gt</code> tag can be used to reference another page
+					either locally or on the internet. The reference need to be put inside
+					the <code>href</code> (HyperText Reference) attribute of the
+					<code>&lta&gt</code> tag. In addition to the
+					<code>href</code> attribute the &lta&gt tag also has another attribute
+					called <code>target</code>. By specifying
+					<code>target="_blank"</code> we can make a link open in a new tab.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					&lta href="https://www.wikipedia.org/"&gtLink to Wikipedia&lt/a&gt
+					<br />
+					&lta href="https://www.wikipedia.org/" target="_blank"&gtLink to
+					Wikipedia&lt/a&gt
+					<h3>Output:</h3>
+					<a href="https://www.wikipedia.org/"> Link to Wikipedia </a>
+					<br />
+					<a href="https://www.wikipedia.org/" target="_blank">
+						Link to Wikipedia
+					</a>
+				</div>
+			</section>
+			<!-- Image tag -->
+			<section id="section-img">
+				<h2>Image Tag</h2>
+				<p>
+					The <code>&ltimg /&gt</code> tag is used for loading images into a
+					webpage. The address (can be either local or on the internet) of the
+					image needs to be put inside the <code>src</code> (source) attribute
+					of the <code>&ltimg /&gt</code> tag. The <code>alt</code> (alternate)
+					attribute is just an alternate name for the image which is displayed
+					when the image fails to load. It is an empty tag.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					&ltimg src="image.jpg" alt="landscape"/&gt
+					<h3>Output:</h3>
+					<h4>Successful</h4>
+					<img src="image.jpg" alt="landscape" />
+					<h4>Failed to load</h4>
+					<img src="" alt="landscape" />
+				</div>
+			</section>
+			<!-- Button tag -->
+			<section id="section-btn">
+				<h2>Button Tag</h2>
+				<p>
+					The <code>&ltbutton&gt</code> tag is used to add a button to the HTML
+					document.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					&ltbutton&gtClick Me&lt/button&gt
+					<h3>Output:</h3>
+					<button>Click Me</button>
+				</div>
+			</section>
+			<!-- Form tag -->
+			<section id="section-form">
+				<h2>Form Tag</h2>
+				<p>
+					The <code>&ltform&gt</code> tag is used to a create HTML form. It is
+					used along with other tags such as <code>&ltinput /&gt</code> (empty
+					tag) and <code>&ltlabel&gt</code>.
+					<br />
+					The <code>&ltlabel&gt</code> tag is used for labelling.
+					<br />
+					The <code>&ltinput /&gt</code> tag can take input from the user. It
+					has many attributes and one such attribute is <code>type</code> and
+					can be used to set the type of the input, like,
+					<code>&ltinput type="text"/&gt</code> to take text input or
+					<code>&ltinput type="radio"/&gt</code> to take a radio input.
+				</p>
+				<div class="example">
+					<h3>Example:</h3>
+					&ltform&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltlabel&gtName:&lt/label&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltinput type="text"/&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltbr&gt&ltbr&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltlabel&gtAge:&lt/label&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltinput type="number"/&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltbr&gt&ltbr&gt
+					<br />
+					&nbsp&nbsp&nbsp&nbsp&ltinput type="submit"/&gt
+					<br />
+					&lt/form&gt
+					<h3>Output:</h3>
+					<label>Name:</label>
+					<input type="text" />
+					<br /><br />
+					<label>Age:</label>
+					<input type="number" />
+					<br /><br />
+					<input type="submit" />
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

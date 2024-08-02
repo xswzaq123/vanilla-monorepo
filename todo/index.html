@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="mainContainer w60">
+        <header>
+            <h1>To-Do List</h1>
+        </header>
+        <div class="head">
+            <h2>Task</h2>
+            <button id="btnAdd" class="curP">Add task</button>
+        </div>
+
+        <hr >
+        <section id="taskList">
+        </section>
+    </div>
+    <dialog id="modal">
+        <form id="form">
+            <h2>Add Task</h2>
+            <div class="formItem">
+                <input id="taskName" type="text" placeholder="Task Name">
+                <input id="time" type="text"  placeholder="Time">
+            </div>
+            <div class="formActions ">
+                <button type="submit" class="curP" id="btnOk">Ok</button>
+                <button class="curP" id="btnCancel">cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="main.js"></script>
+</body>
+</html>

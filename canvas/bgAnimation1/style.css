@@ -1,0 +1,25 @@
+body {
+    background: #000000;
+}
+
+#canvas {
+    width: 1920px;
+    height: 700px;
+}
+
+.slider {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    left: 2rem;
+    top: 88%;
+}
+
+.range {
+    width: 80rem;
+    margin-left: 1rem;
+}
+
+p {
+    color: azure;
+}

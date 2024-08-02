@@ -1,0 +1,83 @@
+nav {
+	position: absolute;
+	padding: 1.3rem;
+	border-bottom: 1px solid var(--divider-color);
+	width: 100%;
+	background-color: var(--bg-color);
+	z-index: 2;
+}
+
+.navUl {
+	color: var(--text-color);
+	display: flex;
+}
+
+.container {
+	display: flex;
+	color: var(--text-color);
+}
+
+.sidebar {
+	position: relative;
+	border-right: 1px solid var(--divider-color);
+	width: 10%;
+	padding: 0.6rem;
+	height: 100vh;
+}
+
+.sidebar li {
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+}
+
+.sidebar li:first-child {
+	margin-top: 3.85rem;
+}
+
+.sidebar li:hover {
+	background-color: var(--hover-color);
+}
+
+.sidebar li a {
+	margin-left: 1rem;
+}
+
+.display {
+	width: 90%;
+	margin-top: 3.85rem;
+	padding: 2rem;
+}
+
+.listContainer {
+	margin-top: 1rem;
+}
+
+.liSettings {
+	position: absolute;
+	bottom: 1rem;
+	left: 0.5rem;
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--accessory-color);
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 1rem;
+	border-bottom: 0.1rem solid var(--divider-color);
+}
+
+.songList {
+	margin-right: 12rem;
+}
+
+.playBtn {
+	width: 20px;
+	background: none;
+	border: none;
+	color: var(--text-color);
+	margin-right: 1rem;
+	&:hover {
+		cursor: pointer;
+	}
+}
